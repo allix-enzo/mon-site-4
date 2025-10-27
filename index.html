@@ -14,6 +14,7 @@
     }
 
     header {
+      /* 👇 NOUVELLE COULEUR DE FOND : #1A2B3B */
       background-color: #1A2B3B; 
       color: white;
       padding: 1rem 0;
@@ -23,13 +24,14 @@
       padding: 2rem;
     }
 
-    video {
+    /* Styles pour le lecteur YouTube intégré (iframe) */
+    iframe {
       width: 80%;
-      height: auto; 
-      max-height: 80vh; 
-      
+      height: 80vh; 
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      
+      /* Centrage et espacement */
       display: block; 
       margin: 30px auto; 
     }
@@ -48,7 +50,12 @@
   <main>
     <p>Voici ma vidéo :</p>
 
-    <video src="/mn-site-4/ma-video-unique.mp4" controls></video>
+    <iframe 
+      src="https://www.youtube.com/embed/OIKozeJACzI" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    ></iframe>
   </main>
 
   <footer>
